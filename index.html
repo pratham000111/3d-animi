@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <section class="banner">
+            <div class="container">
+                <div id="scene">
+                    <h2 id="text">
+                        <span data-depth-y="1">s</span>
+                        <span data-depth-y="-3">u</span>
+                        <span data-depth-y="2.5">m</span>
+                        <span data-depth-y="-4">m</span>
+                        <span data-depth-y="-1.5">e</span>
+                        <span data-depth-y="3">r</span>
+                    </h2>
+                    <div class="layer" data-depth="-0.25"><img src="1.png" alt=""></div>
+                    <div class="layer" data-depth="0.375"><img src="2.png" alt=""></div>
+                    <div class="layer" data-depth="0.75"><img src="3.png" alt=""></div>
+                    <div class="layer" data-depth="-0.125"><img src="4.png" alt=""></div>
+                    <div class="layer" data-depth="0.3625"><img src="5.png" alt=""></div>
+                    <div class="layer" data-depth="-0.1375"><img src="6.png" alt=""></div>
+                    <div class="layer" data-depth="0.25"><img src="7.png" alt=""></div>
+                </div>
+            </div>
+        </section>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+        <script>
+            var scene = document.getElementById('text');
+            var scene = document.getElementById('scene');
+            var parallaxInstance = new Parallax(scene);
+            var parallaxInstance = new Parallax(text);
+        </script>
+    </body>
+
+</html>
